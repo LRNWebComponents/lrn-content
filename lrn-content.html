@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`lrn-content`
+A LRN element
+
+@demo demo/index.html 
+-->
+
+<dom-module id="lrn-content">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'lrn-content',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'lrn-content',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
