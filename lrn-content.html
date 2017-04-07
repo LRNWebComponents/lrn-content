@@ -2,9 +2,11 @@
 
 <!--
 `lrn-content`
-A LRN element
+  A LRN element for presenting content with a simple heading.
+  This is to improve accessibility, consistency, and tag things
+  with OER schema.
 
-@demo demo/index.html 
+@demo demo/index.html
 -->
 
 <dom-module id="lrn-content">
@@ -14,7 +16,12 @@ A LRN element
         display: block;
       }
     </style>
-    <h2>Hello [[prop1]]</h2>
+    <div typeof="oer:SupportingMaterial">
+      <h2 property="oer:name">{{title}}</h2>
+      <div property="oer:description">
+        <content></content>
+      </div>
+    </div>
   </template>
 
   <script>
@@ -23,10 +30,14 @@ A LRN element
       is: 'lrn-content',
 
       properties: {
-        prop1: {
+        title: {
           type: String,
-          value: 'lrn-content',
+          value: '',
         },
+        headinglevel: {
+          type: String,
+          value: 'h2',
+        }
       },
 
     });
