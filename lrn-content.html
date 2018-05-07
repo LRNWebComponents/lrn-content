@@ -17,9 +17,9 @@
       }
     </style>
     <div typeof="oer:SupportingMaterial">
-      <h2 property="oer:name">{{title}}</h2>
+      <h2 property="oer:name">[[title]]</h2>
       <div property="oer:description">
-        <content></content>
+        <slot></slot>
       </div>
     </div>
   </template>
@@ -34,10 +34,6 @@
           type: String,
           value: '',
         },
-        headinglevel: {
-          type: String,
-          value: 'h2',
-        }
       },
 
     });

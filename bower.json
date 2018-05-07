@@ -1,10 +1,9 @@
 {
   "name": "lrn-content",
-  "description": "A LRN element",
+  "description": "Simple content wrapper",
   "main": "lrn-content.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.4.0",
-    "lrnsys-behaviors": "LRNWebComponents/lrnsys-behaviors#^1.0.0"
+    "polymer": "Polymer/polymer#^1.4.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
